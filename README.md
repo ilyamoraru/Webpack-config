@@ -3,16 +3,17 @@
 Структура проекта:
 
 --dist - папка, в которую собирается проект  
---src - папка с исходниками  
-  -favicon - иконки сайта  
-  -fonts - шрифты  
-  -html - заготовки html-страниц  
-    -includes - встариваемые шаблоны(footer, header, components, etc)  
-    -views - страницы  
-  -img - общие изображения(лого, bg, etc)  
-  -js - javascript файлы  
-  -scss - scss файлы  
-  -uploads - изображния статей  
+--src - папка с исходниками
+
+	-favicon - иконки сайта  
+ 	-fonts - шрифты  
+	-html - заготовки html-страниц 
+	-includes - встариваемые шаблоны(footer, header, components, etc)  
+	-views - страницы  
+		-img - общие изображения(лого, bg, etc)
+		-js - javascript файлы  
+	-scss - scss файлы  
+	-uploads - изображния статей  
 --package.json - файл настроек Node.js  
 --webpack.config.js - файл настроек Webpack  
 
