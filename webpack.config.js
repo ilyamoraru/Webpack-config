@@ -4,6 +4,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const fs = require('fs')
 const autoprefixer = require('autoprefixer');
+const webpack = require('webpack');
+
 
 function generateHtmlPlugins(templateDir) {
   const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
@@ -98,6 +100,11 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      'window.jQuery': 'jquery',
+    }),
     new MiniCssExtractPlugin({
       filename: "./css/style.css"
     }),
